@@ -1,3 +1,7 @@
+== dependencies needed ==
+* maven
+
+
 == how to compile ==
 * go to project root folder
 
