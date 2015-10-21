@@ -8,6 +8,7 @@
     <artifactId>Sainsbury_test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    
     <dependencies>
         <dependency>
             <!-- jsoup HTML parser library @ http://jsoup.org/ -->
@@ -28,7 +29,51 @@
             <version>1.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+
     </dependencies>
+
+
+    <build>
+        <plugins>
+            <!--<plugin>-->
+                <!--&lt;!&ndash; Build an executable JAR &ndash;&gt;-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-jar-plugin</artifactId>-->
+                <!--<version>2.6</version>-->
+                <!--<configuration>-->
+                    <!--<archive>-->
+                        <!--<manifest>-->
+                            <!--&lt;!&ndash;<addClasspath>true</addClasspath>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<classpathPrefix>lib/</classpathPrefix>&ndash;&gt;-->
+                            <!--<mainClass>scrapper.PageScrapper</mainClass>-->
+                        <!--</manifest>-->
+                    <!--</archive>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
+            <plugin>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>scrapper.PageScrapper</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

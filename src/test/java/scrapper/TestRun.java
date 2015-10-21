@@ -1,9 +1,12 @@
-import org.jsoup.nodes.Element;
+package scrapper;
+
+import scrapper.PageScrapper;
+import scrapper.ProductContainer;
 
 import java.io.IOException;
 
-public class testRun {
-    public static void main(String[] args) {
+public class TestRun {
+    public static void main(String[] args) throws IOException {
 
         PageScrapper scrapper = null;
         try {
@@ -12,5 +15,8 @@ public class testRun {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        System.out.println("Press any key to end program.");
+        System.in.read();
     }
 }

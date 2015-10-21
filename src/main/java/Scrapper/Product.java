@@ -1,3 +1,5 @@
+package scrapper;
+
 import org.joda.money.CurrencyUnit;
 import org.joda.money.Money;
 import org.json.simple.JSONObject;
