@@ -1,5 +1,12 @@
-== how to run ==
-1. go to project root folder
-2. execute command: mvn exec:java -Dexec.mainClass="scrapper.PageScrapper"
+== how to compile ==
+* go to project root folder
+
+* execute command: mvn compile
+
+
+== how to run application ==
+* go to project root folder
+
+* execute command: mvn exec:java -Dexec.mainClass="scrapper.PageScrapper"
 
 
